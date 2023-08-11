@@ -1,0 +1,167 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.wraping {
+    margin: 0px auto;
+    width: 95%;
+}
+
+.bg-img {
+    background-image: url(./img/Banner.jpg);
+    height: 80%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: bottom;
+
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.csvg-title {
+    border: none;
+    color: #fff;
+    font-size: 80px;
+    margin: 0 auto;
+    white-space: nowrap;
+    /* margin-bottom: 20px; */
+    text-shadow: 2px 2px 3px #000;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.csvg-digit-outer {
+    display: flex;
+}
+
+.csvg-digit {
+    display: inline-block;
+    vertical-align: center;
+}
+
+.csvg-countdown {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+    color: #fff;
+    height: 366px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+
+.csvg-digit-number {
+    background: #38414a;
+    background: rgba(40, 50, 61, .62);
+    font-family: Roboto, sans-serif;
+    font-size: 107px;
+    font-variant-numeric: tabular-nums;
+    font-weight: 300;
+    padding: 0 24px;
+}
+
+.csvg-digit-label {
+    font-size: 23px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.csvg-digit-label {
+    background: rgba(40, 50, 61, .62);
+    text-align: center;
+}
+
+.csvg-digit[data-tad-bind=seconds] .csvg-digit-number {
+    color: #ee5486;
+}
+
+.csvg-date {
+    background: rgba(40, 50, 61, .62);
+    bottom: 0;
+    left: 0;
+    margin-top: 0;
+    padding: 6px 0;
+    position: absolute;
+    width: 100%;
+}
+
+.csvg-date {
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: .5px;
+    margin-top: 10px;
+  
+   
+}
+
+.csvg-date a {
+    color: #f8eab9;
+}
+
+.csvg-countdown {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+@media screen and (max-width:767px) {
+    .csvg-title {
+        font-size: 35px;
+    }
+
+    .csvg-digit-label {
+        font-size: 13px;
+    }
+
+    .csvg-digit-number {
+        font-size: 25px;
+        padding: 10px 24px;
+
+    }
+
+    .csvg-countdown__content {
+        margin-top: 200px;
+    }
+
+    .csvg-date {
+        font-size: 14px;
+    }
+
+
+
+        .bg-img {
+            background-image: url(./img/bg.jpg);
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            background-position: bottom;
+            overflow: hidden;
+        
+        }
+
+    
+    .csvg-date{
+        padding: 8px 0px;
+    }
+}
